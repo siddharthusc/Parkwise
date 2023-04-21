@@ -1,5 +1,4 @@
-
-let parkingspaceData = [
+[
     {
         "SpaceID": "CB100",
         "BlockFace": "800 S FIGUEROA ST",
@@ -1442,27 +1441,4 @@ let parkingspaceData = [
         "output": 1,
         "distance": 0.3843108393
     }
-];
-
-const columns = [
-    { 
-        name: 'Lot ID',
-        selector: row => row.SpaceID
-    },
-    {
-        name: 'Address',
-        selector: row => row.BlockFace
-    },
-    {
-        name: 'Distance (miles)',
-        selector: row => row.dist,
-        sortable: true
-    },
-    {
-        name: 'Rate ($)',
-        selector: row => row.RateRange,
-        sortable: true
-    }
-];
-
-export { parkingspaceData, columns}
+]

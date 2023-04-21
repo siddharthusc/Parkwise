@@ -2,14 +2,14 @@ import '../../assets/css/Map.css';
 import React from "react";
 import { Card, Nav, Row, Col } from 'react-bootstrap';
 import Box from '@mui/material/Box';
-import { Typography, InputAdornment, Stack, Container, TextField } from '@mui/material';
+import { Typography, InputAdornment, Stack, Container, TextField, Tooltip } from '@mui/material';
 import { NavigationBar, SearchBar, SearchIcon, CustomSlider, GreenButton, RestartAltIcon, GoogleMapReact, LocationOnIcon, LocationSearchingIcon, DataTable, CustomGreenTableStyle, conditionalRowStyles } from '../../utils';
 import { API_KEY } from "../../constants/GoogleMapAPI";
-import { parkingspaceData, columns, data } from "../../constants/ParkingSpaceData";
+import { parkingspaceData, columns} from "../../constants/ParkingSpaceData";
 import Autocomplete from './Autocomplete';
+import { CustomTooltip } from '../../components/CustomTooltip';
 
-export default class MapPage extends React.Component {
-
+class MapContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,13 +18,14 @@ export default class MapPage extends React.Component {
             parkingspaces: [],
             selectedParkingId: null,
             markerClicked: false,
-            searchText: "",
-            distance:.2,
+            searchText: false,
+            distance: 2,
             mapApiLoaded: false,
             mapInstance: null,
             mapApi: null,
             places: [],
-            searched: false
+            searched: false,
+            filteredParkingSpaces: []
         }
     }
 
@@ -44,27 +45,12 @@ export default class MapPage extends React.Component {
             console.log('Waiting for location');
         }
     }
-    _onChange = ({ center, zoom }) => {
-        this.setState({
-            center: center,
-            zoom: zoom,
-        });
 
-    }
     apiHasLoaded = (map, maps) => {
         this.setState({
             mapApiLoaded: true,
             mapInstance: map,
             mapApi: maps,
-        });
-        
-    };
-
-    addPlace = (place) => {
-        this.setState({
-            places: [place],
-            latitude: place.geometry.location.lat(),
-            longitude: place.geometry.location.lng()
         });
         
     };
@@ -82,69 +68,67 @@ export default class MapPage extends React.Component {
             Math.sin(dLon/2) * Math.sin(dLon/2)
             ;
         var c = 2*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-        var d = R*c/1.609; //distance in KM converted to miles
-        // console.log(d)
+        var d = (R*c)/1.609 ///1.609; //distance in KM converted to miles
+        //console.log(d)
         return d
+     
     }
 
     handleSearch = () => { 
+        parkingspaceData.forEach((parking) =>
+        {
+            parking.dist = this.getDistanceFromLatLonInMiles(this.state.latitude, this.state.longitude, parking.latitude, parking.longitude)
+        })
         let filteredParkingLots = parkingspaceData.filter(
             g => 
         //     g.name.toLowerCase().includes(this.state.searchText.toLowerCase())
         // &&
-        (this.getDistanceFromLatLonInMiles(this.state.latitude, this.state.longitude, g.latitude, g.longitude) < this.state.distance)
+        (g.dist < this.state.distance)
         &&
         (g.output==1)
         )
+
         this.setState({
-            parkingspaces: filteredParkingLots
+            filteredParkingSpaces: filteredParkingLots
         })
     }
 
-    header = () => {
-        
+    handleSlider = (event) => {
+        this.setState({distance: event.target.value });
 
-        const resetAll = () => {
+        if (this.state.filteredParkingSpaces.length > 0)
+        {
+            let filteredParkingLots = parkingspaceData.filter(g => (g.dist < this.state.distance) && (g.output==1))
             this.setState({
-                    parkingspaces: parkingspaceData,
-                    distance: 0.2,
-                    searchText: "",
-                    searched: false
+                filteredParkingSpaces: filteredParkingLots
                 })
-                console.log(this.state.searched)
-        }
-
-        return (
-            <Stack direction='row' spacing={20}>
-                <Stack id='slider'>
-                    <Typography id='slider-text' gutterBottom>
-                            <b>Distance (miles)</b> 
-                    </Typography>
-                    <CustomSlider 
-                            valueLabelDisplay="auto"
-                            value={this.state.distance}
-                            min={0}
-                            max={2}
-                            defaultValue={1}
-                            onChange={(event,value) => {this.setState({distance:value})}}
-                    />
-                </Stack>
-
-                <GreenButton variant="contained" startIcon={ <RestartAltIcon /> } onClick={resetAll} >
-                        Reset
-                </GreenButton> 
-            </Stack>
-        );
+        } 
+        
     }
- 
+
+    _onChange = ({ center, zoom }) => {
+        this.setState({
+            center: center,
+            zoom: zoom,
+        });
+
+    }
+
+    addPlace = (place) => {
+        this.setState({
+            places: [place],
+            latitude: place.geometry.location.lat(),
+            longitude: place.geometry.location.lng(),
+            searched: true,
+            searchText: true
+        });
+
+        this.handleSearch();
+       
+    };
+
     map = () => {
-
-        
-
-        const handleParkingLotClick = (parkinglot) => {
-            window.location.replace("/location/" + parkinglot.SpaceID)
-        }
-        
+       
         const clickedOutside = (x, y, lat, lng, event) => {
             if(this.state.markerClicked === true) {
                 this.setState({
@@ -158,143 +142,164 @@ export default class MapPage extends React.Component {
             
         }
 
-        const   {
-                    places, mapApiLoaded, mapInstance, mapApi,
-                } = this.state;
-
-        return(
-            <Stack spacing={2} sx={{height:'100%'}}>
-                {mapApiLoaded && (
-                        <div>
-                            <Autocomplete map={mapInstance} mapApi={mapApi} addplace={this.addPlace} />
-                            
-                        </div>
-                        
-                    )}
+        const resetAll = () => {
+            this.setState({
+                    parkingspaces: parkingspaceData,
+                    distance: 0.2,
+                    searchText: false,
+                    searched: false
+                })
+            
                 
-                <GoogleMapReact onClick={clickedOutside}
-                            bootstrapURLKeys={{ key: API_KEY, libraries: ['places', 'geometry'], }}
-                            yesIWantToUseGoogleMapApiInternals
-                            onGoogleApiLoaded={({ map, maps }) => this.apiHasLoaded(map, maps)}
-                            defaultCenter={{
-                                lat: 34.0224,
-                                lng: -118.2851
-                            }}
-                            defaultZoom={11}
-                            center = {
-                                {lat: this.state.latitude,
-                                lng: this.state.longitude}
-                            }
-                            onChange={this._onChange}
-            >
-               {
-                    this.state.parkingspaces.map((parking) => {
-                        // console.log(this.state.places);
-                        if(this.state.places.length >= 1){
-                            this.state.searched = true;
-                            this.handleSearch();
-                            return (
-                                        <LocationOnIcon color={"secondary"}
-                                                lat={parking.latitude}
-                                                lng={parking.longitude}
-                                                onClick={() => {this.setState({selectedParkingId: parking.SpaceID, markerClicked:true})}}
-                                        ></LocationOnIcon>
-                                    );
-                        }
-                        })
-                }
+        }
 
-                 {
-                        this.state.parkingspaces.map((parking) => {
-                                if(this.state.selectedParkingId === parking.id) {
-                                        return(
-                                            <div lat={parking.latitude}
-                                                        lng={parking.longitude}
-                                                        onClick = {() => {handleParkingLotClick(parking)}}
-                                                        style={{backgroundColor: "white", padding:10, borderRadius: 20, width: 100}}
+        const handleParkingLotClick = (parkinglot) => {
+            window.location.replace("/location/" + parkinglot.SpaceID)
+        }
+
+        const   {
+            places, mapApiLoaded, mapInstance, mapApi, searchText
+        } = this.state;
+
+        
+        return (
+            <Stack spacing={2}>
+                <Stack direction='row' justifyContent='space-between' sx={{padding:'10px'}}>
+                    {mapApiLoaded && (
+                            <div>
+                                <Autocomplete map={mapInstance} mapApi={mapApi} addplace={this.addPlace} />
+                            </div>
+                            
+                    )}
+
+                        <Stack id='slider'>
+                            <Typography id='slider-text' gutterBottom>
+                                    <b>Distance (miles)</b> 
+                            </Typography>
+                            <CustomSlider 
+                                    valueLabelDisplay="auto"
+                                    value={this.state.distance}
+                                    min={0}
+                                    max={2}
+                                    step={0.1}
+                                    defaultValue={0.2}
+                                    onChange={this.handleSlider}
+                            />
+                        </Stack>
+
+                        <GreenButton variant="contained" startIcon={ <RestartAltIcon /> } onClick={resetAll} >
+                            Reset
+                        </GreenButton> 
+
+                </Stack>
+
+                <Stack direction='row' spacing={2}>
+                    <div className="map-card">
+                    <GoogleMapReact onClick={clickedOutside}
+                                    bootstrapURLKeys={{ key: API_KEY, libraries: ['places', 'geometry'], }}
+                                    yesIWantToUseGoogleMapApiInternals
+                                    onGoogleApiLoaded={({ map, maps }) => this.apiHasLoaded(map, maps)}
+                                    defaultCenter={{
+                                        lat: 34.0224,
+                                        lng: -118.2851
+                                    }}
+                                    defaultZoom={15}
+                                    center = {
+                                        {lat: this.state.latitude,
+                                        lng: this.state.longitude}
+                                    }
+                                    onChange={this._onChange}
+                            
+                        >
+                            {
+                                
+                                this.state.filteredParkingSpaces.map((parking) =>{
+                                    return (
+                                        <CustomTooltip  
+                                            lat={parking.latitude}
+                                            lng={parking.longitude}
+                                            key={parking.SpaceID} 
+                                            title={parking.SpaceID}
+                                        >
+                                            <LocationOnIcon 
+                                                color={"secondary"}
+                                                onClick={() => {handleParkingLotClick(parking)}}
                                             >
-                                                    <Typography style = {{textAlign: "center"}}>
-                                                        {parking.name}
-                                                    </Typography>
-                                            </div>
-                                        );
-                                    }
-                                else {
-                                        return null
-                                    }
-                        })
-                }
-
-                <LocationSearchingIcon color={"primary"} lat= {this.state.latitude} lng= {this.state.longitude}></LocationSearchingIcon>
-
+                                            </LocationOnIcon>
+                                        </CustomTooltip>
+                                        
+                                    );
+                                    
+                                })
+                            }
+                            <LocationSearchingIcon color={"primary"} lat= {this.state.latitude} lng= {this.state.longitude}></LocationSearchingIcon>
+                    </GoogleMapReact>
+                    </div>
+                    
+                <div className='info-card'>
+                
+                    { this.state.searched? (this.suggestions()) : (<div></div>) }
+                
+                </div>
+                </Stack>
+               
+                
             
-            </GoogleMapReact>
+                
+                
+                
             </Stack>
-            
         );
     }
 
     suggestions = () => {
-        if(this.state.searched == true){
-        return (
-            <div className="container-mt-5">
-                <DataTable
-                    columns={columns}
-                    data = {data}
-                    customStyles={CustomGreenTableStyle}
-                    conditionalRowStyles={conditionalRowStyles}
-                    fixedHeader pagination>
-                </DataTable>    
-            </div>        
-        );
-        }
-        else{
-            return (
-                <div >
-                    <Box
-                        sx={{
-                            height: 400,
-                            maxWidth: '100%',
-                        }}>
-                    <p>Make a search to start</p>
-                    </Box>
-                </div>
-            );
-        }
-        
+        if (this.state.filteredParkingSpaces.length > 0)
+            {
+                let data = this.state.filteredParkingSpaces.map((parking) =>
+                {
+                    return ({
+                        SpaceID: parking.SpaceID,
+                        BlockFace: parking.BlockFace,
+                        dist: parking.dist,
+                        RateRange: parking.RateRange
+                    });
+                })
+                
+                return (
+                    <div>
+                        <DataTable
+                            columns={columns}
+                            data={data}
+                            customStyles={CustomGreenTableStyle}
+                            conditionalRowStyles={conditionalRowStyles}
+                            fixedHeader pagination
+                        >
+                        </DataTable>
+                    </div>
+                )
+
+                
+            }
+       
     }
 
+
     render() {
-        return(
-            <div id='main-body'>
+        
+        return (
+            <div className='main-body'>
                 <NavigationBar />
 
-                <div id='content'>
+                <div className='content'>
                     <Container maxWidth='xl'>
                         <Card>
-                            <Card.Header>
-                                { this.header() }
-                            </Card.Header>
-
                             <Card.Body>
                                 <Container>
-                                    <Row>
-                                        <Col>
-                                            <Card className="map-card">
-                                                <Card.Body>
-                                                    {this.map()}    
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-
-                                        <Col>
-                                            <Card className="info-card">
-                                                <Card.Body>
-                                                    {this.suggestions()}    
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    </Row>
+                                            <div>
+                                                {this.map()}
+                                            </div>
+                                
+                                   
                                 </Container>
                             </Card.Body>
                         </Card>
@@ -302,6 +307,8 @@ export default class MapPage extends React.Component {
                 </div>
             </div>
         );
-    }
 
+    }
 }
+
+export default MapContainer;

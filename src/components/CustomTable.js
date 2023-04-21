@@ -1,4 +1,9 @@
 const CustomGreenTableStyle  = {
+    table : {
+        style: {
+            maxHeight: '50vh',
+        },
+    },
     head: {
         style: {
             fontWeight: 'bold',

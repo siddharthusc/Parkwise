@@ -6,7 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.main-body {
+  background-image: url('./assets/images/image_bg.jpg');
+  background-repeat: round;
+  height: 150vh;
+}
+.content {
+  margin-top: 2%;
+}
+.content .container {
+  margin-bottom: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

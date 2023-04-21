@@ -7,10 +7,11 @@ class Autocomplete extends React.Component {
     constructor(props){
         super(props);
         this.clearSearchBox = this.clearSearchBox.bind(this);
+        
 
     }
 
-    componentDidMount({ map, mapApi } = this.props) {
+    componentDidMount({ map, mapApi, searchText } = this.props) {
         
         const options = {
             types: ['address'],
@@ -21,6 +22,8 @@ class Autocomplete extends React.Component {
         );
         this.autoComplete.addListener('place_changed', this.onPlaceChanged);
         this.autoComplete.bindTo('bounds', map);
+
+        
        
     }
 
@@ -45,7 +48,10 @@ class Autocomplete extends React.Component {
 
     clearSearchBox() {
         this.searchInput.value = '';
+
     }
+    
+
 
     render() {
         return (
