@@ -12,7 +12,8 @@ let parkingspaceData = [
         "latitude": "34.046768",
         "longitude": "-118.262114",
         "output": 1,
-        "distance": 0.334177446
+        "distance": 0.334177446,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB101",
@@ -26,7 +27,8 @@ let parkingspaceData = [
         "latitude": "34.046806",
         "longitude": "-118.262078",
         "output": 1,
-        "distance": 0.3367317001
+        "distance": 0.3367317001,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB106",
@@ -40,7 +42,8 @@ let parkingspaceData = [
         "latitude": "34.047067",
         "longitude": "-118.261838",
         "output": 1,
-        "distance": 0.3542225789
+        "distance": 0.3542225789,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB107",
@@ -54,7 +57,8 @@ let parkingspaceData = [
         "latitude": "34.047164",
         "longitude": "-118.261752",
         "output": 1,
-        "distance": 0.3606925614
+        "distance": 0.3606925614,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1089",
@@ -68,7 +72,8 @@ let parkingspaceData = [
         "latitude": "34.045387",
         "longitude": "-118.260658",
         "output": 1,
-        "distance": 0.4119894272
+        "distance": 0.4119894272,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1090",
@@ -82,7 +87,8 @@ let parkingspaceData = [
         "latitude": "34.045343",
         "longitude": "-118.260592",
         "output": 1,
-        "distance": 0.4159868219
+        "distance": 0.4159868219,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB114",
@@ -96,7 +102,8 @@ let parkingspaceData = [
         "latitude": "34.039355",
         "longitude": "-118.265864",
         "output": 1,
-        "distance": 0.4582736668
+        "distance": 0.4582736668,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB116",
@@ -110,7 +117,8 @@ let parkingspaceData = [
         "latitude": "34.039238",
         "longitude": "-118.265937",
         "output": 1,
-        "distance": 0.4651068616
+        "distance": 0.4651068616,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1254",
@@ -124,7 +132,8 @@ let parkingspaceData = [
         "latitude": "34.039299",
         "longitude": "-118.263968",
         "output": 1,
-        "distance": 0.4997279428
+        "distance": 0.4997279428,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1259",
@@ -138,7 +147,8 @@ let parkingspaceData = [
         "latitude": "34.039553",
         "longitude": "-118.263729",
         "output": 1,
-        "distance": 0.490500982
+        "distance": 0.490500982,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1283",
@@ -152,7 +162,8 @@ let parkingspaceData = [
         "latitude": "34.042455",
         "longitude": "-118.261013",
         "output": 1,
-        "distance": 0.4536251889
+        "distance": 0.4536251889,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1288",
@@ -166,7 +177,8 @@ let parkingspaceData = [
         "latitude": "34.042139",
         "longitude": "-118.26131",
         "output": 1,
-        "distance": 0.4508573913
+        "distance": 0.4508573913,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1290",
@@ -180,7 +192,8 @@ let parkingspaceData = [
         "latitude": "34.042033",
         "longitude": "-118.261409",
         "output": 1,
-        "distance": 0.4503352052
+        "distance": 0.4503352052,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1298",
@@ -194,7 +207,8 @@ let parkingspaceData = [
         "latitude": "34.043951",
         "longitude": "-118.259897",
         "output": 1,
-        "distance": 0.4722095016
+        "distance": 0.4722095016,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1314",
@@ -208,7 +222,8 @@ let parkingspaceData = [
         "latitude": "34.042005",
         "longitude": "-118.261674",
         "output": 1,
-        "distance": 0.4391458515
+        "distance": 0.4391458515,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1315",
@@ -222,7 +237,8 @@ let parkingspaceData = [
         "latitude": "34.041429",
         "longitude": "-118.262219",
         "output": 1,
-        "distance": 0.4405901195
+        "distance": 0.4405901195,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1317A",
@@ -236,7 +252,8 @@ let parkingspaceData = [
         "latitude": "34.041192",
         "longitude": "-118.262441",
         "output": 1,
-        "distance": 0.4429511531
+        "distance": 0.4429511531,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1319",
@@ -250,7 +267,8 @@ let parkingspaceData = [
         "latitude": "34.040993",
         "longitude": "-118.262627",
         "output": 1,
-        "distance": 0.4456839894
+        "distance": 0.4456839894,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1319A",
@@ -264,7 +282,8 @@ let parkingspaceData = [
         "latitude": "34.04095",
         "longitude": "-118.262668",
         "output": 1,
-        "distance": 0.4463304858
+        "distance": 0.4463304858,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1319B",
@@ -278,7 +297,8 @@ let parkingspaceData = [
         "latitude": "34.040853",
         "longitude": "-118.262759",
         "output": 1,
-        "distance": 0.4479582571
+        "distance": 0.4479582571,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1320",
@@ -292,7 +312,8 @@ let parkingspaceData = [
         "latitude": "34.04081",
         "longitude": "-118.262799",
         "output": 1,
-        "distance": 0.448741817
+        "distance": 0.448741817,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1321A",
@@ -306,7 +327,8 @@ let parkingspaceData = [
         "latitude": "34.040611",
         "longitude": "-118.262987",
         "output": 1,
-        "distance": 0.4526534507
+        "distance": 0.4526534507,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1325",
@@ -320,7 +342,8 @@ let parkingspaceData = [
         "latitude": "34.039983",
         "longitude": "-118.263574",
         "output": 1,
-        "distance": 0.4692468396
+        "distance": 0.4692468396,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1326",
@@ -334,7 +357,8 @@ let parkingspaceData = [
         "latitude": "34.039922",
         "longitude": "-118.263632",
         "output": 1,
-        "distance": 0.4711391083
+        "distance": 0.4711391083,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1327",
@@ -348,7 +372,8 @@ let parkingspaceData = [
         "latitude": "34.03988",
         "longitude": "-118.26367",
         "output": 1,
-        "distance": 0.4725289081
+        "distance": 0.4725289081,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1339",
@@ -362,7 +387,8 @@ let parkingspaceData = [
         "latitude": "34.039324",
         "longitude": "-118.265084",
         "output": 1,
-        "distance": 0.4732565623
+        "distance": 0.4732565623,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1340",
@@ -376,7 +402,8 @@ let parkingspaceData = [
         "latitude": "34.039621",
         "longitude": "-118.265384",
         "output": 1,
-        "distance": 0.4483287748
+        "distance": 0.4483287748,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1342",
@@ -390,7 +417,8 @@ let parkingspaceData = [
         "latitude": "34.039728",
         "longitude": "-118.265283",
         "output": 1,
-        "distance": 0.4431962243
+        "distance": 0.4431962243,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1344",
@@ -404,7 +432,8 @@ let parkingspaceData = [
         "latitude": "34.040012",
         "longitude": "-118.265019",
         "output": 1,
-        "distance": 0.4301815133
+        "distance": 0.4301815133,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1345",
@@ -418,7 +447,8 @@ let parkingspaceData = [
         "latitude": "34.040073",
         "longitude": "-118.264961",
         "output": 1,
-        "distance": 0.4275499806
+        "distance": 0.4275499806,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1347",
@@ -432,7 +462,8 @@ let parkingspaceData = [
         "latitude": "34.040178",
         "longitude": "-118.264863",
         "output": 1,
-        "distance": 0.4230989116
+        "distance": 0.4230989116,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1348",
@@ -446,7 +477,8 @@ let parkingspaceData = [
         "latitude": "34.040219",
         "longitude": "-118.264825",
         "output": 1,
-        "distance": 0.4213960022
+        "distance": 0.4213960022,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1348A",
@@ -460,7 +492,8 @@ let parkingspaceData = [
         "latitude": "34.04028",
         "longitude": "-118.264768",
         "output": 1,
-        "distance": 0.4189170186
+        "distance": 0.4189170186,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1350A",
@@ -474,7 +507,8 @@ let parkingspaceData = [
         "latitude": "34.040486",
         "longitude": "-118.264577",
         "output": 1,
-        "distance": 0.4109067371
+        "distance": 0.4109067371,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1351",
@@ -488,7 +522,8 @@ let parkingspaceData = [
         "latitude": "34.04053",
         "longitude": "-118.264536",
         "output": 1,
-        "distance": 0.4092827913
+        "distance": 0.4092827913,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1355",
@@ -502,7 +537,8 @@ let parkingspaceData = [
         "latitude": "34.041042",
         "longitude": "-118.264057",
         "output": 1,
-        "distance": 0.3927182895
+        "distance": 0.3927182895,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1359",
@@ -516,7 +552,8 @@ let parkingspaceData = [
         "latitude": "34.041609",
         "longitude": "-118.263528",
         "output": 1,
-        "distance": 0.3796651966
+        "distance": 0.3796651966,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1361",
@@ -530,7 +567,8 @@ let parkingspaceData = [
         "latitude": "34.04171",
         "longitude": "-118.263436",
         "output": 1,
-        "distance": 0.3778880158
+        "distance": 0.3778880158,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1364",
@@ -544,7 +582,8 @@ let parkingspaceData = [
         "latitude": "34.041851",
         "longitude": "-118.263305",
         "output": 1,
-        "distance": 0.3758343941
+        "distance": 0.3758343941,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1371",
@@ -558,7 +597,8 @@ let parkingspaceData = [
         "latitude": "34.04305",
         "longitude": "-118.262185",
         "output": 1,
-        "distance": 0.374854298
+        "distance": 0.374854298,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1374",
@@ -572,7 +612,8 @@ let parkingspaceData = [
         "latitude": "34.043305",
         "longitude": "-118.261947",
         "output": 1,
-        "distance": 0.3783900616
+        "distance": 0.3783900616,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1376",
@@ -586,7 +627,8 @@ let parkingspaceData = [
         "latitude": "34.043405",
         "longitude": "-118.261856",
         "output": 1,
-        "distance": 0.3800030753
+        "distance": 0.3800030753,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1377",
@@ -600,7 +642,8 @@ let parkingspaceData = [
         "latitude": "34.043463",
         "longitude": "-118.261801",
         "output": 1,
-        "distance": 0.381140902
+        "distance": 0.381140902,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1381",
@@ -614,7 +657,41 @@ let parkingspaceData = [
         "latitude": "34.046876",
         "longitude": "-118.264142",
         "output": 1,
-        "distance": 0.2237223704
+        "distance": 0.2237223704,
+        "band": "0-3",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB1389",
@@ -628,7 +705,41 @@ let parkingspaceData = [
         "latitude": "34.046645",
         "longitude": "-118.263625",
         "output": 1,
-        "distance": 0.247683837
+        "distance": 0.247683837,
+        "band": "0-3",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB1399",
@@ -642,7 +753,8 @@ let parkingspaceData = [
         "latitude": "34.046087",
         "longitude": "-118.259349",
         "output": 1,
-        "distance": 0.486524259
+        "distance": 0.486524259,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1427",
@@ -656,7 +768,8 @@ let parkingspaceData = [
         "latitude": "34.045783",
         "longitude": "-118.259878",
         "output": 1,
-        "distance": 0.4557665966
+        "distance": 0.4557665966,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1429",
@@ -670,7 +783,8 @@ let parkingspaceData = [
         "latitude": "34.045539",
         "longitude": "-118.260081",
         "output": 1,
-        "distance": 0.4444805697
+        "distance": 0.4444805697,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1430",
@@ -684,7 +798,8 @@ let parkingspaceData = [
         "latitude": "34.045494",
         "longitude": "-118.260124",
         "output": 1,
-        "distance": 0.4421522384
+        "distance": 0.4421522384,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1432",
@@ -698,7 +813,8 @@ let parkingspaceData = [
         "latitude": "34.045398",
         "longitude": "-118.260213",
         "output": 1,
-        "distance": 0.4374203399
+        "distance": 0.4374203399,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1472A",
@@ -712,7 +828,8 @@ let parkingspaceData = [
         "latitude": "34.03976",
         "longitude": "-118.265501",
         "output": 1,
-        "distance": 0.4371434106
+        "distance": 0.4371434106,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB16",
@@ -726,7 +843,8 @@ let parkingspaceData = [
         "latitude": "34.045235",
         "longitude": "-118.262134",
         "output": 1,
-        "distance": 0.3286183155
+        "distance": 0.3286183155,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB160",
@@ -740,7 +858,8 @@ let parkingspaceData = [
         "latitude": "34.038701",
         "longitude": "-118.266064",
         "output": 1,
-        "distance": 0.499667186
+        "distance": 0.499667186,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1601",
@@ -754,7 +873,41 @@ let parkingspaceData = [
         "latitude": "34.045209",
         "longitude": "-118.264413",
         "output": 1,
-        "distance": 0.1997171478
+        "distance": 0.1997171478,
+        "band": "5-7",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB1604",
@@ -768,7 +921,41 @@ let parkingspaceData = [
         "latitude": "34.04526",
         "longitude": "-118.264664",
         "output": 1,
-        "distance": 0.1848993325
+        "distance": 0.1848993325,
+        "band": "5-7",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB1605",
@@ -782,7 +969,41 @@ let parkingspaceData = [
         "latitude": "34.045275",
         "longitude": "-118.264731",
         "output": 1,
-        "distance": 0.1809250905
+        "distance": 0.1809250905,
+        "band": "5-7",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB161",
@@ -796,7 +1017,8 @@ let parkingspaceData = [
         "latitude": "34.038735",
         "longitude": "-118.266042",
         "output": 1,
-        "distance": 0.4976289922
+        "distance": 0.4976289922,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB1611",
@@ -810,7 +1032,41 @@ let parkingspaceData = [
         "latitude": "34.045445",
         "longitude": "-118.2655",
         "output": 1,
-        "distance": 0.1353680597
+        "distance": 0.1353680597,
+        "band": "3-5",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB162",
@@ -824,7 +1080,8 @@ let parkingspaceData = [
         "latitude": "34.038901",
         "longitude": "-118.265936",
         "output": 1,
-        "distance": 0.4877462213
+        "distance": 0.4877462213,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB163",
@@ -838,7 +1095,8 @@ let parkingspaceData = [
         "latitude": "34.038945",
         "longitude": "-118.265906",
         "output": 1,
-        "distance": 0.4851757069
+        "distance": 0.4851757069,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB17",
@@ -852,7 +1110,8 @@ let parkingspaceData = [
         "latitude": "34.045194",
         "longitude": "-118.262173",
         "output": 1,
-        "distance": 0.326745544
+        "distance": 0.326745544,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB173",
@@ -866,7 +1125,8 @@ let parkingspaceData = [
         "latitude": "34.039088",
         "longitude": "-118.264915",
         "output": 1,
-        "distance": 0.4918368541
+        "distance": 0.4918368541,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB175",
@@ -880,7 +1140,8 @@ let parkingspaceData = [
         "latitude": "34.039026",
         "longitude": "-118.264779",
         "output": 1,
-        "distance": 0.4985384868
+        "distance": 0.4985384868,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB19",
@@ -894,7 +1155,8 @@ let parkingspaceData = [
         "latitude": "34.045048",
         "longitude": "-118.262308",
         "output": 1,
-        "distance": 0.3205369564
+        "distance": 0.3205369564,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB20",
@@ -908,7 +1170,8 @@ let parkingspaceData = [
         "latitude": "34.044992",
         "longitude": "-118.262361",
         "output": 1,
-        "distance": 0.31818907
+        "distance": 0.31818907,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB3372",
@@ -922,7 +1185,8 @@ let parkingspaceData = [
         "latitude": "34.043932",
         "longitude": "-118.261854",
         "output": 1,
-        "distance": 0.3657908731
+        "distance": 0.3657908731,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB3375",
@@ -936,7 +1200,8 @@ let parkingspaceData = [
         "latitude": "34.044039",
         "longitude": "-118.262023",
         "output": 1,
-        "distance": 0.3541333874
+        "distance": 0.3541333874,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB3377",
@@ -950,7 +1215,8 @@ let parkingspaceData = [
         "latitude": "34.044119",
         "longitude": "-118.262144",
         "output": 1,
-        "distance": 0.3457308335
+        "distance": 0.3457308335,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB3477",
@@ -964,7 +1230,8 @@ let parkingspaceData = [
         "latitude": "34.040695",
         "longitude": "-118.264048",
         "output": 1,
-        "distance": 0.4131789136
+        "distance": 0.4131789136,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB3478",
@@ -978,7 +1245,8 @@ let parkingspaceData = [
         "latitude": "34.04065",
         "longitude": "-118.263976",
         "output": 1,
-        "distance": 0.4179904422
+        "distance": 0.4179904422,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB3489",
@@ -992,7 +1260,8 @@ let parkingspaceData = [
         "latitude": "34.040566",
         "longitude": "-118.264078",
         "output": 1,
-        "distance": 0.419896635
+        "distance": 0.419896635,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB3490",
@@ -1006,7 +1275,8 @@ let parkingspaceData = [
         "latitude": "34.040535",
         "longitude": "-118.264031",
         "output": 1,
-        "distance": 0.4231143612
+        "distance": 0.4231143612,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB3492",
@@ -1020,7 +1290,8 @@ let parkingspaceData = [
         "latitude": "34.04003",
         "longitude": "-118.263016",
         "output": 1,
-        "distance": 0.4839792977
+        "distance": 0.4839792977,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB3501",
@@ -1034,7 +1305,8 @@ let parkingspaceData = [
         "latitude": "34.039856",
         "longitude": "-118.262979",
         "output": 1,
-        "distance": 0.4950741133
+        "distance": 0.4950741133,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB37",
@@ -1048,7 +1320,8 @@ let parkingspaceData = [
         "latitude": "34.047859",
         "longitude": "-118.259691",
         "output": 1,
-        "distance": 0.4876086792
+        "distance": 0.4876086792,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB4248",
@@ -1062,7 +1335,8 @@ let parkingspaceData = [
         "latitude": "34.043488",
         "longitude": "-118.261168",
         "output": 1,
-        "distance": 0.4136796586
+        "distance": 0.4136796586,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB4249",
@@ -1076,7 +1350,8 @@ let parkingspaceData = [
         "latitude": "34.04352",
         "longitude": "-118.261217",
         "output": 1,
-        "distance": 0.4102358376
+        "distance": 0.4102358376,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB4251",
@@ -1090,7 +1365,8 @@ let parkingspaceData = [
         "latitude": "34.043644",
         "longitude": "-118.261409",
         "output": 1,
-        "distance": 0.3967997293
+        "distance": 0.3967997293,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB4510",
@@ -1104,7 +1380,8 @@ let parkingspaceData = [
         "latitude": "34.050085",
         "longitude": "-118.261185",
         "output": 1,
-        "distance": 0.4819079849
+        "distance": 0.4819079849,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB4511",
@@ -1118,7 +1395,8 @@ let parkingspaceData = [
         "latitude": "34.050147",
         "longitude": "-118.261121",
         "output": 1,
-        "distance": 0.4874309683
+        "distance": 0.4874309683,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB897",
@@ -1132,7 +1410,8 @@ let parkingspaceData = [
         "latitude": "34.047034",
         "longitude": "-118.260165",
         "output": 1,
-        "distance": 0.447453279
+        "distance": 0.447453279,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB898",
@@ -1146,7 +1425,8 @@ let parkingspaceData = [
         "latitude": "34.046991",
         "longitude": "-118.260205",
         "output": 1,
-        "distance": 0.4446430898
+        "distance": 0.4446430898,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB899",
@@ -1160,7 +1440,8 @@ let parkingspaceData = [
         "latitude": "34.046934",
         "longitude": "-118.260258",
         "output": 1,
-        "distance": 0.4409407974
+        "distance": 0.4409407974,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB900",
@@ -1174,7 +1455,8 @@ let parkingspaceData = [
         "latitude": "34.046891",
         "longitude": "-118.260298",
         "output": 1,
-        "distance": 0.4381634357
+        "distance": 0.4381634357,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB903",
@@ -1188,7 +1470,8 @@ let parkingspaceData = [
         "latitude": "34.046641",
         "longitude": "-118.260531",
         "output": 1,
-        "distance": 0.4222884333
+        "distance": 0.4222884333,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB904",
@@ -1202,7 +1485,8 @@ let parkingspaceData = [
         "latitude": "34.046593",
         "longitude": "-118.260575",
         "output": 1,
-        "distance": 0.4193433837
+        "distance": 0.4193433837,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB911",
@@ -1216,7 +1500,8 @@ let parkingspaceData = [
         "latitude": "34.045358",
         "longitude": "-118.261722",
         "output": 1,
-        "distance": 0.3512690251
+        "distance": 0.3512690251,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB912",
@@ -1230,7 +1515,8 @@ let parkingspaceData = [
         "latitude": "34.045174",
         "longitude": "-118.261894",
         "output": 1,
-        "distance": 0.3428020775
+        "distance": 0.3428020775,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB913",
@@ -1244,7 +1530,8 @@ let parkingspaceData = [
         "latitude": "34.045117",
         "longitude": "-118.261947",
         "output": 1,
-        "distance": 0.3403065084
+        "distance": 0.3403065084,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB917",
@@ -1258,7 +1545,8 @@ let parkingspaceData = [
         "latitude": "34.044781",
         "longitude": "-118.26226",
         "output": 1,
-        "distance": 0.3267136211
+        "distance": 0.3267136211,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB918",
@@ -1272,7 +1560,8 @@ let parkingspaceData = [
         "latitude": "34.044741",
         "longitude": "-118.262297",
         "output": 1,
-        "distance": 0.3252482127
+        "distance": 0.3252482127,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB919",
@@ -1286,7 +1575,8 @@ let parkingspaceData = [
         "latitude": "34.044685",
         "longitude": "-118.262349",
         "output": 1,
-        "distance": 0.3232372855
+        "distance": 0.3232372855,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB92",
@@ -1300,7 +1590,8 @@ let parkingspaceData = [
         "latitude": "34.04703",
         "longitude": "-118.262139",
         "output": 1,
-        "distance": 0.336858527
+        "distance": 0.336858527,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB921",
@@ -1314,7 +1605,8 @@ let parkingspaceData = [
         "latitude": "34.044587",
         "longitude": "-118.26244",
         "output": 1,
-        "distance": 0.3198668766
+        "distance": 0.3198668766,
+        "band": "7-10"
     },
     {
         "SpaceID": "CB928",
@@ -1328,7 +1620,8 @@ let parkingspaceData = [
         "latitude": "34.044103",
         "longitude": "-118.262896",
         "output": 1,
-        "distance": 0.3058351985
+        "distance": 0.3058351985,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB929",
@@ -1342,7 +1635,8 @@ let parkingspaceData = [
         "latitude": "34.043947",
         "longitude": "-118.263041",
         "output": 1,
-        "distance": 0.3025456155
+        "distance": 0.3025456155,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB930",
@@ -1356,7 +1650,8 @@ let parkingspaceData = [
         "latitude": "34.043906",
         "longitude": "-118.26308",
         "output": 1,
-        "distance": 0.3017306843
+        "distance": 0.3017306843,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB934",
@@ -1370,7 +1665,41 @@ let parkingspaceData = [
         "latitude": "34.043458",
         "longitude": "-118.263496",
         "output": 1,
-        "distance": 0.2960457483
+        "distance": 0.2960457483,
+        "band": "5-7",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB936",
@@ -1384,7 +1713,41 @@ let parkingspaceData = [
         "latitude": "34.043359",
         "longitude": "-118.26359",
         "output": 1,
-        "distance": 0.2953735193
+        "distance": 0.2953735193,
+        "band": "5-7",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB937",
@@ -1398,7 +1761,41 @@ let parkingspaceData = [
         "latitude": "34.043303",
         "longitude": "-118.263643",
         "output": 1,
-        "distance": 0.2951141711
+        "distance": 0.2951141711,
+        "band": "5-7",
+
+        "labels": [
+            "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
+        ],
+        "data": [237,
+            191,
+            211,
+            204,
+            245],
+        "pie_labels_crime":[
+            "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
+        ],
+        "pie_labels_ticketing":[
+            "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
+        ],
+        "data_ticketing": [
+            800,
+            975,
+            1014,
+            1300,
+            1324,
+],
+        "data_pie_crime": [450,
+            191,
+            348,
+            204,
+            235],
+        "data_pie_ticketing": [148,
+            240,
+            211,
+            640,
+            490,
+            360]
     },
     {
         "SpaceID": "CB95",
@@ -1412,7 +1809,8 @@ let parkingspaceData = [
         "latitude": "34.047184",
         "longitude": "-118.261998",
         "output": 1,
-        "distance": 0.3474592799
+        "distance": 0.3474592799,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB995",
@@ -1426,7 +1824,8 @@ let parkingspaceData = [
         "latitude": "34.048053",
         "longitude": "-118.261602",
         "output": 1,
-        "distance": 0.389164364
+        "distance": 0.389164364,
+        "band": "5-7"
     },
     {
         "SpaceID": "CB997",
@@ -1440,10 +1839,10 @@ let parkingspaceData = [
         "latitude": "34.048119",
         "longitude": "-118.26173",
         "output": 1,
-        "distance": 0.3843108393
+        "distance": 0.3843108393,
+        "band": "5-7"
     }
 ];
-
 const columns = [
     { 
         name: 'Lot ID',
@@ -1454,13 +1853,18 @@ const columns = [
         selector: row => row.BlockFace
     },
     {
-        name: 'Distance (miles)',
-        selector: row => row.dist,
+        name: 'MeteredTimeLimit',
+        selector: row => row.MeteredTimeLimit,
         sortable: true
     },
     {
         name: 'Rate ($)',
         selector: row => row.RateRange,
+        sortable: true
+    },
+    {
+        name: 'band',
+        selector: row => row.band,
         sortable: true
     }
 ];

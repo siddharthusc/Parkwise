@@ -19,7 +19,7 @@ class MapContainer extends React.Component {
             selectedParkingId: null,
             markerClicked: false,
             searchText: false,
-            distance: 2,
+            distance: .2,
             mapApiLoaded: false,
             mapInstance: null,
             mapApi: null,
@@ -39,6 +39,7 @@ class MapContainer extends React.Component {
                     longitude: position.coords.longitude,
                     parkingspaces:parkingspaceData
                 })  
+                console.log(this.state.latitude, this.state.longitude)
             })
         }
         else {
@@ -59,7 +60,7 @@ class MapContainer extends React.Component {
             
         const deg2rad = (deg) => {return deg * (Math.PI/180)}
 
-        var R = 6371; //radius of earth in km
+        var R = 3958.8; //radius of earth in miles
         var dLat = deg2rad(lat2 - lat1);
         var dLon = deg2rad(lon2-lon1);
         var a = 
@@ -68,8 +69,8 @@ class MapContainer extends React.Component {
             Math.sin(dLon/2) * Math.sin(dLon/2)
             ;
         var c = 2*Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-        var d = (R*c)/1.609 ///1.609; //distance in KM converted to miles
-        //console.log(d)
+        var d = (R*c) ///1.609; //distance in KM converted to miles
+        console.log(lat1, lon1, lat2, lon2, d)
         return d
      
     }
@@ -77,7 +78,7 @@ class MapContainer extends React.Component {
     handleSearch = () => { 
         parkingspaceData.forEach((parking) =>
         {
-            parking.dist = this.getDistanceFromLatLonInMiles(this.state.latitude, this.state.longitude, parking.latitude, parking.longitude)
+            parking.dist = this.getDistanceFromLatLonInMiles(this.state.latitude, this.state.longitude, Number(parking.latitude), Number(parking.longitude))
         })
         let filteredParkingLots = parkingspaceData.filter(
             g => 
@@ -114,18 +115,16 @@ class MapContainer extends React.Component {
 
     }
 
-    addPlace = (place) => {
+    addPlace = (place) => {     
         this.setState({
-            places: [place],
-            latitude: place.geometry.location.lat(),
-            longitude: place.geometry.location.lng(),
+            places: place.name,
+            latitude: place.geometry.viewport.Va.hi,
+            longitude: place.geometry.viewport.Ha.hi,
             searched: true,
             searchText: true
-        });
-
-        this.handleSearch();
-       
+        }, () => { this.handleSearch(); });   
     };
+
 
     map = () => {
        
@@ -180,7 +179,7 @@ class MapContainer extends React.Component {
                                     valueLabelDisplay="auto"
                                     value={this.state.distance}
                                     min={0}
-                                    max={2}
+                                    max={.5}
                                     step={0.1}
                                     defaultValue={0.2}
                                     onChange={this.handleSlider}
@@ -232,7 +231,13 @@ class MapContainer extends React.Component {
                                     
                                 })
                             }
-                            <LocationSearchingIcon color={"primary"} lat= {this.state.latitude} lng= {this.state.longitude}></LocationSearchingIcon>
+                            <LocationSearchingIcon 
+                            color={"primary"} 
+                            lat= {this.state.latitude} 
+                            lng= {this.state.longitude}
+                            >
+                                
+                            </LocationSearchingIcon>
                     </GoogleMapReact>
                     </div>
                     
@@ -260,8 +265,9 @@ class MapContainer extends React.Component {
                     return ({
                         SpaceID: parking.SpaceID,
                         BlockFace: parking.BlockFace,
-                        dist: parking.dist,
-                        RateRange: parking.RateRange
+                        MeteredTimeLimit: parking.MeteredTimeLimit,
+                        RateRange: parking.RateRange,
+                        band: parking.band
                     });
                 })
                 

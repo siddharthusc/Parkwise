@@ -15,7 +15,7 @@ function NavigationBar({logoutUser}) {
                 <Navbar.Collapse id="website-navbar" className="justify-content-end">
                     <Nav>
                         <Nav.Item>
-                            <Nav.Link href="#">H O M E</Nav.Link>
+                            <Nav.Link href="../mappage">H O M E</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="#" >S U P P O R T</Nav.Link>
