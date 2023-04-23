@@ -663,11 +663,11 @@ let parkingspaceData = [
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
         ],
-        "data": [237,
-            191,
-            211,
-            204,
-            245],
+        "data": [37,
+            51,
+            91,
+            44,
+            75],
         "pie_labels_crime":[
             "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
         ],
@@ -675,23 +675,23 @@ let parkingspaceData = [
             "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
         ],
         "data_ticketing": [
-            800,
-            975,
-            1014,
-            1300,
-            1324,
+            120,
+            135,
+            84,
+            90,
+            130,
 ],
-        "data_pie_crime": [450,
-            191,
-            348,
-            204,
-            235],
-        "data_pie_ticketing": [148,
-            240,
-            211,
-            640,
-            490,
-            360]
+        "data_pie_crime": [70,
+            91,
+            48,
+            54,
+            45],
+        "data_pie_ticketing": [58,
+            80,
+            71,
+            60,
+            90,
+            60]
     },
     {
         "SpaceID": "CB1389",
@@ -711,11 +711,11 @@ let parkingspaceData = [
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
         ],
-        "data": [237,
-            191,
-            211,
-            204,
-            245],
+        "data": [37,
+            51,
+            91,
+            44,
+            75],
         "pie_labels_crime":[
             "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
         ],
@@ -723,23 +723,23 @@ let parkingspaceData = [
             "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
         ],
         "data_ticketing": [
-            800,
-            975,
-            1014,
-            1300,
-            1324,
+            120,
+            135,
+            84,
+            90,
+            130,
 ],
-        "data_pie_crime": [450,
-            191,
-            348,
-            204,
-            235],
-        "data_pie_ticketing": [148,
-            240,
-            211,
-            640,
-            490,
-            360]
+        "data_pie_crime": [70,
+            91,
+            48,
+            54,
+            45],
+        "data_pie_ticketing": [58,
+            80,
+            71,
+            60,
+            90,
+            60]
     },
     {
         "SpaceID": "CB1399",
@@ -922,7 +922,7 @@ let parkingspaceData = [
         "longitude": "-118.264664",
         "output": 1,
         "distance": 0.1848993325,
-        "band": "5-7",
+        "band": "3-5",
 
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
@@ -970,7 +970,7 @@ let parkingspaceData = [
         "longitude": "-118.264731",
         "output": 1,
         "distance": 0.1809250905,
-        "band": "5-7",
+        "band": "3-5",
 
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
@@ -1666,16 +1666,16 @@ let parkingspaceData = [
         "longitude": "-118.263496",
         "output": 1,
         "distance": 0.2960457483,
-        "band": "5-7",
+        "band": "7-10",
 
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
         ],
-        "data": [237,
-            191,
-            211,
-            204,
-            245],
+        "data": [505,
+            460,
+            585,
+            670,
+            754],
         "pie_labels_crime":[
             "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
         ],
@@ -1683,23 +1683,23 @@ let parkingspaceData = [
             "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
         ],
         "data_ticketing": [
-            800,
-            975,
-            1014,
-            1300,
-            1324,
+            1350,
+            1475,
+            1614,
+            1700,
+            1824,
 ],
         "data_pie_crime": [450,
-            191,
-            348,
-            204,
-            235],
+            391,
+            638,
+            364,
+            725],
         "data_pie_ticketing": [148,
-            240,
-            211,
+            500,
+            511,
             640,
-            490,
-            360]
+            890,
+            960]
     },
     {
         "SpaceID": "CB936",
@@ -1714,16 +1714,16 @@ let parkingspaceData = [
         "longitude": "-118.26359",
         "output": 1,
         "distance": 0.2953735193,
-        "band": "5-7",
+        "band": "7-10",
 
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
         ],
-        "data": [237,
-            191,
-            211,
-            204,
-            245],
+        "data": [505,
+            460,
+            585,
+            670,
+            754],
         "pie_labels_crime":[
             "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
         ],
@@ -1731,23 +1731,23 @@ let parkingspaceData = [
             "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
         ],
         "data_ticketing": [
-            800,
-            975,
-            1014,
-            1300,
-            1324,
+            1350,
+            1475,
+            1614,
+            1700,
+            1824,
 ],
         "data_pie_crime": [450,
-            191,
-            348,
-            204,
-            235],
+            391,
+            638,
+            364,
+            725],
         "data_pie_ticketing": [148,
-            240,
-            211,
+            500,
+            511,
             640,
-            490,
-            360]
+            890,
+            960]
     },
     {
         "SpaceID": "CB937",
@@ -1762,16 +1762,16 @@ let parkingspaceData = [
         "longitude": "-118.263643",
         "output": 1,
         "distance": 0.2951141711,
-        "band": "5-7",
+        "band": "7-10",
 
         "labels": [
             "1Mar-8Mar","9Mar-16Mar","17Mar-24Mar","25Mar-2Apr","3Apr-10Apr"
         ],
-        "data": [237,
-            191,
-            211,
-            204,
-            245],
+        "data": [505,
+            460,
+            585,
+            670,
+            754],
         "pie_labels_crime":[
             "ROBBERY","BURGLARY","THEFT FROM MOTOR VEHICLE","VEHICLE - STOLEN","VEHICLE - ATTEMPT STOLEN"
         ],
@@ -1779,23 +1779,23 @@ let parkingspaceData = [
             "BLOCKING DRIVEWAY","DOUBLE PARKING","DISPLAY OF PLATES","RED ZONE","NO PARK/STREET CLEAN","METER EXP."
         ],
         "data_ticketing": [
-            800,
-            975,
-            1014,
-            1300,
-            1324,
+            1350,
+            1475,
+            1614,
+            1700,
+            1824,
 ],
         "data_pie_crime": [450,
-            191,
-            348,
-            204,
-            235],
+            391,
+            638,
+            364,
+            725],
         "data_pie_ticketing": [148,
-            240,
-            211,
+            500,
+            511,
             640,
-            490,
-            360]
+            890,
+            960]
     },
     {
         "SpaceID": "CB95",
