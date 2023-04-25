@@ -19,7 +19,7 @@ class MapContainer extends React.Component {
             selectedParkingId: null,
             markerClicked: false,
             searchText: false,
-            distance: .2,
+            distance: .4,
             mapApiLoaded: false,
             mapInstance: null,
             mapApi: null,
@@ -181,7 +181,7 @@ class MapContainer extends React.Component {
                                     min={0}
                                     max={.5}
                                     step={0.1}
-                                    defaultValue={0.2}
+                                    defaultValue={0.4}
                                     onChange={this.handleSlider}
                             />
                         </Stack>

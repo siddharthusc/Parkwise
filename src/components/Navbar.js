@@ -21,7 +21,7 @@ function NavigationBar({logoutUser}) {
                             <Nav.Link href="#" >S U P P O R T</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="./" onClick={logoutUser(history)}>L O G O U T</Nav.Link>
+                            <Nav.Link href="../" onClick={logoutUser(history)}>L O G O U T</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

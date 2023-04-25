@@ -1853,7 +1853,7 @@ const columns = [
         selector: row => row.BlockFace
     },
     {
-        name: 'MeteredTimeLimit',
+        name: 'Time Limit',
         selector: row => row.MeteredTimeLimit,
         sortable: true
     },
@@ -1863,7 +1863,7 @@ const columns = [
         sortable: true
     },
     {
-        name: 'band',
+        name: 'Band',
         selector: row => row.band,
         sortable: true
     }
