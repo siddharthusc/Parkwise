@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# LA Metered Parking Recommendation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Team Data Wanderers Project Repository.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Preprocessing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The scripts in the preprocessing folder perform the following tasks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Fetch data 
 
-### `npm run build`
+`Citation Data_Data Fetching` and `Crime Data_Data Fetching` fetch datasets from the [Los Angeles Open Data](https://data.lacity.org/) using [Socrata Open Data API](https://dev.socrata.com/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Preprocess datasets
 
-### `npm run eject`
+`Citation Data_Complete Dataset` and `Crime Data_Complete Dataset` preprocess data fetched by removing missing values, converting datatypes, and formatting location information columns.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Conduct analysis and aggregation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`Citation Data_Aggregation` and `Crime Data_Aggregation` aggregate time-series and corresponding citation/crime data in different levels and  conduct analysis on crime codes and citation codes. Then`Citation Check` and `Crime Check` analyze corresponding data within the 2 miles radius in `6 points of interest` that we picked in the city of Los Angeles.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Plot and visualization
 
-### Code Splitting
+Visualization within different levels is created in `Generate Plots`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
